@@ -1,6 +1,6 @@
 # Weather Forecast Mapper
 
-[Dark Sky Forecast API](https://developer.forecast.io/),
+[Dark Sky Forecast API](https://developer.forecast.io/)
 and [Google Maps](https://developers.google.com/maps/documentation/javascript/) mashup
 built with React and MobX.
 

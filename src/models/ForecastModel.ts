@@ -32,7 +32,7 @@ export default class ForecastModel {
     // Note that data is not loaded when the model is first created.
     // `loadData` must be called or a `lat/lng/time` value must change for that to happen.
     reaction(
-      () => (this.lat, this.lng, this.time),
+      () => ({lat: this.lat, lng: this.lng, time: this.time}),
       () => this.loadData()
     );
   }

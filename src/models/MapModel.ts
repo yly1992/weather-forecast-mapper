@@ -1,4 +1,4 @@
-import {action, observable, computed, asFlat} from 'mobx';
+import {action, observable, computed, asFlat, reaction} from 'mobx';
 import MarkerModel from '../models/MarkerModel';
 
 function createMapEl(): HTMLElement {
@@ -38,6 +38,25 @@ export default class MapModel {
       : new MarkerModel(this.map, markerOrLatLng, true);
     marker.marker.addListener('click', () => this.setActiveMarker(marker));
     marker.marker.addListener('dragstart', () => this.setActiveMarker(marker, false));
+
+    // Subscribe to changes on the marker,
+    // and dispose of the reactions when the marker is destroyed.
+    // This API could certainly be improved.
+    const reactions: Function[] = [];
+    reactions.push(reaction(
+      () => ({lat: marker.position.lat, lng: marker.position.lng}),
+      () => marker.isActive ? this.map.setCenter(marker.position) : null
+    ));
+    reactions.push(reaction(
+      () => marker.isDestroyed,
+      (isDestroyed) => {
+        if (isDestroyed) {
+          reactions.forEach((r) => r());
+          reactions.length = 0;
+        }
+      },
+    ));
+
     this.markers.push(marker);
     if (setActive) {
       this.setActiveMarker(marker);
