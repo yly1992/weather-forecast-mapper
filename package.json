@@ -1,6 +1,6 @@
 {
   "name": "weather-forecast-mapper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dark Sky Forecast API and Google Maps mashup built with React and MobX",
   "main": "index.js",
   "scripts": {
