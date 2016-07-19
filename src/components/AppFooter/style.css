@@ -1,0 +1,6 @@
+@import '../../styles/_vars';
+
+.app-footer {
+  text-align: center;
+  margin-bottom: $spacing-lg;
+}

@@ -1,0 +1,50 @@
+@import '../../styles/_vars';
+
+.forecast-week-day {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: $spacing-base 0;
+
+  .weather-icon {
+    font-size: $font-size-h1;
+    margin-bottom: $spacing-xs;
+  }
+}
+
+.forecast-week-day-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  font-size: $font-size-h3;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-sm;
+  }
+}
+
+.forecast-week-day-name {
+  font-size: $font-size-h1;
+}
+
+.forecast-week-day-temperatures {
+  margin-bottom: $spacing-base;
+}
+
+.forecast-week-day-temperature {
+  line-height: 1;
+  font-size: $font-size-h3;
+}
+
+.forecast-week-day-temperature-spacer {
+  line-height: 1;
+  font-size: $font-size-sm;
+  margin: 0 3px;
+  white-space: nowrap;
+}

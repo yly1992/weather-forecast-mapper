@@ -1,0 +1,17 @@
+@define-mixin clickable-dashed-border $hover-color: $gray-lightish, $pressed-color: $gray, $active-color: $gray-light {
+  border: 3px dashed transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $hover-color;
+  }
+
+  &:active {
+    border-color: $pressed-color;
+  }
+
+  &.active {
+    border-color: $active-color;
+    cursor: default;
+  }
+}

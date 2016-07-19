@@ -1,0 +1,7 @@
+{
+  "extends": ["tslint-config-strictish"],
+  "rules": {
+    "member-access": false,
+    "no-constructor-vars": false
+  }
+}

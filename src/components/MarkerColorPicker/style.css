@@ -1,0 +1,7 @@
+@import '../../styles/_vars';
+
+.marker-color-picker {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $spacing-base;
+}

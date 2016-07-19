@@ -1,0 +1,83 @@
+@import './_vars';
+
+/**
+ * The contents of `./main` should all be imported here and only here,
+ * otherwise they will be duplicated at each import site.
+ */
+@import './main/_animations';
+@import './main/_buttons';
+@import './main/_type';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: $text-color;
+  background-color: $bg-color;
+  font-size: $font-size-base;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+p {
+  margin-top: 0;
+}
+
+// #app-wrapper {}
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: $spacing-base;
+}
+
+select {
+  padding: $spacing-xs;
+}
+
+input, button {
+  margin-right: $spacing-xs;
+  margin-bottom: $spacing-xs;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+small {
+  font-size: 62%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $primary-color-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color-darker;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $primary-color-darkest;
+  }
+}

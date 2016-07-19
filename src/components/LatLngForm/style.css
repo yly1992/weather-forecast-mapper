@@ -1,0 +1,23 @@
+@import '../../styles/_vars';
+
+.lat-lng-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pure-control-group {
+    margin-bottom: $spacing-base;
+
+    input {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

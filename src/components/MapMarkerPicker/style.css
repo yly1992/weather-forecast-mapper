@@ -1,0 +1,23 @@
+@import '../../styles/_vars';
+
+.map-marker-picker {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: $spacing-base;
+
+  button {
+    background: none;
+    padding: $spacing-xs;
+    margin: 0 0 0 $spacing-xs;
+    &:focus {
+      background: $gray-lightest;
+    }
+    &:hover {
+      background: $gray-lighter;
+    }
+    &:active {
+      background: $gray-light;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/_vars';
+
+.forecast-week {
+  margin-bottom: $spacing-lg;
+  text-align: center;
+}
+
+.forecast-week-summary {
+  margin-bottom: $spacing-lg;
+}
+
+.forecast-week-days {
+  display: flex;
+  flex-wrap: wrap;
+}

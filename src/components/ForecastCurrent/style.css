@@ -1,0 +1,61 @@
+@import '../../styles/_vars';
+
+.forecast-current {
+  margin-bottom: $spacing-lg;
+}
+
+.forecast-current-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: $font-size-xl;
+  margin-bottom: $spacing-base;
+
+  .weather-icon {
+    line-height: normal;
+    margin-right: $spacing-base;
+  }
+
+  .marker-icon {
+    flex-grow: 0;
+  }
+}
+
+.forecast-current-header-content {
+  padding-left: $spacing-base;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast-current-header-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1;
+
+  small {
+    font-size: $font-size-h3;
+  }
+}
+
+.forecast-current-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  font-size: $font-size-h1;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-sm;
+  }
+
+  small {
+    font-size: $font-size-h3;
+  }
+}

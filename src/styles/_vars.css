@@ -1,0 +1,46 @@
+$primary-color: #89c;
+$primary-color-lighter: color($primary-color l(+22%));
+$primary-color-light: color($primary-color l(+18%));
+$primary-color-lightish: color($primary-color l(+8%));
+$primary-color-darkish: color($primary-color l(-4%));
+$primary-color-dark: color($primary-color l(-10%));
+$primary-color-darker: color($primary-color l(-16%));
+$primary-color-darkest: color($primary-color l(-22%));
+$accent-color: #ffed5b;
+$accent-color-light: color($accent-color l(+12%));
+$accent-color-lightish: color($accent-color l(+6%));
+$accent-color-darkish: color($accent-color l(-4%));
+$accent-color-dark: color($accent-color l(-10%));
+$accent-color-darker: color($accent-color l(-16%));
+$error-color: #c33;
+$success-color: $accent-color-darker;
+$gray-lightest: #f7f7f7;
+$gray-lighter: #eee;
+$gray-light: #ddd;
+$gray-lightish: #b7b7b7;
+$gray: #999;
+
+$text-color: #333;
+$primary-color-text: #fff;
+
+$bg-color: #fff;
+$border-color: #bbb;
+
+$nav-height: 48px;
+$spacing-base: 15px;
+$spacing-sm: 10px;
+$spacing-xs: 5px;
+$spacing-lg: 30px;
+$button-height: 35px;
+
+$font-size-base: 16px;
+$font-size-sm: 13px;
+$font-size-h3: 20px;
+$font-size-h2: 24px;
+$font-size-h1: 32px;
+$font-size-lg: calc($font-size-h1 * 1.5);
+$font-size-xl: calc($font-size-h1 * 2);
+$golden-mean: 1.618033988749895;
+
+$marker-width: 20px;
+$marker-height: 34px;

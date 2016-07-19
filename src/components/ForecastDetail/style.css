@@ -1,0 +1,6 @@
+@import '../../styles/_vars';
+
+.forecast-detail {
+  padding: 0 $spacing-base;
+  margin-bottom: $spacing-lg;
+}

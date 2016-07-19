@@ -1,0 +1,7 @@
+@import '../../styles/_vars';
+
+.loading-animation {
+  text-align: center;
+  font-size: $font-size-h1;
+  padding: $spacing-lg $spacing-base;
+}
